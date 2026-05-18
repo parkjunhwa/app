@@ -1,0 +1,52 @@
+<div class="evs-screen evs-root card-inbox-screen">
+  <header class="nav-header">
+    <button type="button" class="nav-back" data-back aria-label="뒤로"><span data-lucide-back></span></button>
+    <div class="nav-title">카드내역 Inbox</div>
+    <div class="nav-header__actions"></div>
+  </header>
+  <div class="inbox-tabbar" id="inboxTabs">
+    <div class="evs-tabs inbox-tabs">
+      <button type="button" class="evs-tab" data-mode="need">미처리 <span class="count"></span></button>
+      <button type="button" class="evs-tab" data-mode="done">처리완료 <span class="count"></span></button>
+      <button type="button" class="evs-tab" data-mode="all">전체 <span class="count"></span></button>
+    </div>
+    <button type="button" class="inbox-filter-button"><span data-lucide-filter></span> 필터</button>
+  </div>
+  <div class="evs-content card-inbox-content">
+    <div class="card-inbox-content__head">
+      <p class="card-inbox-subtext" id="inboxSubtext"></p>
+      <div class="card-inbox-select">
+        <div class="card-inbox-select__main">
+          <button type="button" class="card-inbox-select__btn" id="btnSelectAll">
+          <span class="evs-check evs-check--round" id="checkAll">
+              <span class="evs-check__icon" data-lucide="check" data-lucide-size="14" aria-hidden="true"></span>
+            </span>
+          <span class="card-inbox-select__label">전체 선택 (<span id="selectedCount">0</span>)</span>
+        </button>
+        <span class="card-inbox-select__info" data-lucide-info aria-hidden="true"></span>
+        </div>
+        <div class="card-inbox-toolbar" role="toolbar" aria-label="목록 작업">
+          <button type="button" class="card-inbox-toolbar__btn" id="inboxBtnAdd" aria-label="추가" data-tooltip="추가">
+            <span data-lucide="plus" data-lucide-size="16" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="card-inbox-toolbar__btn" id="inboxBtnEdit" aria-label="선택 수정" data-tooltip="선택 수정" disabled>
+            <span data-lucide="pencil" data-lucide-size="16" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="card-inbox-toolbar__btn" id="inboxBtnDelete" aria-label="선택 삭제" data-tooltip="선택 삭제" disabled>
+            <span data-lucide="trash-2" data-lucide-size="16" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-inbox-content__scroll">
+      <div class="evs-card receipt-list card-inbox-list" id="inboxList"></div>
+    </div>
+  </div>
+  <footer class="card-inbox-footer">
+    <div class="card-inbox-footer__summary">
+      <span class="card-inbox-footer__count">선택 <span id="footerCount">0</span>건</span>
+      <span class="card-inbox-footer__sum" id="footerSum">0원</span>
+    </div>
+    <button type="button" class="action-bar card-inbox-footer__action" id="inboxAction">선택 항목 처리 (0)</button>
+  </footer>
+</div>

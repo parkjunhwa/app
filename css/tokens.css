@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Thin.woff2') format('woff2'), local('Pretendard GOV Thin');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-ExtraLight.woff2') format('woff2'), local('Pretendard GOV ExtraLight');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Light.woff2') format('woff2'), local('Pretendard GOV Light');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Regular.woff2') format('woff2'), local('Pretendard GOV Regular');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Medium.woff2') format('woff2'), local('Pretendard GOV Medium');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-SemiBold.woff2') format('woff2'), local('Pretendard GOV SemiBold');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Bold.woff2') format('woff2'), local('Pretendard GOV Bold');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-ExtraBold.woff2') format('woff2'), local('Pretendard GOV ExtraBold');
+}
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../assets/fonts/PretendardGOV-Black.woff2') format('woff2'), local('Pretendard GOV Black');
+}
+
+/* 시안1 (v1) — 프로토타입 styles.css :root 대응 */
+:root {
+  --w-blue: #3182F6;
+  --w-blue-deep: #1E5FCC;
+  --w-blue-deeper: #0D3B82;
+  --w-navy: #0B1C40;
+  --w-blue-soft: #EAF2FE;
+  --w-blue-20: #f9fbff;
+  --w-blue-50: #F4F8FF;
+  --w-accent: #635BFF;
+  --w-purple: #635BFF;
+  --w-pastel-mint: #DCF2E4;
+  --w-pastel-sky: #DCEAFB;
+  --w-pastel-lilac: #E8DCFB;
+  --w-pastel-peach: #FBE5DA;
+  --w-orange: #FF7A00;
+  --w-red: #F04438;
+  --w-bg: #F4F6FB;
+  --w-card: #FFFFFF;
+  --w-ink-1: rgba(14, 21, 37, 1);
+  --w-ink-2: #1F2A44;
+  --w-ink-3: #5A6276;
+  --w-ink-4: #8B92A6;
+  --w-line: #E5E8EF;
+  --w-line-2: #EEF1F6;
+  --w-hero-grad: linear-gradient(160deg, #3182F6 0%, #1E5FCC 60%, #0D3B82 100%);
+  --w-login-grad: linear-gradient(180deg, #0D3B82 0%, #1E5FCC 50%, #3182F6 100%);
+  --w-cta-grad: linear-gradient(95deg, #3182F6 0%, #1E5FCC 100%);
+  --w-card-radius: 16px;
+  --w-card-radius-sm: 10px;
+  --w-card-shadow: 0 1px 2px rgba(13, 38, 76, 0.04), 0 4px 14px rgba(13, 38, 76, 0.05);
+  --w-font: 'Pretendard GOV', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  --w-num-font: var(--w-font);
+  --tw-input-radius: 4px;
+  --tw-pill-radius: 99px;
+  --sp-0: 0;
+  --sp-2: 2px;
+  --sp-4: 4px;
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-28: 28px;
+  --sp-32: 32px;
+  --sp-36: 36px;
+  --sp-40: 40px;
+  --sp-44: 44px;
+  --sp-48: 48px;
+  --sp-52: 52px;
+  --sp-56: 56px;
+  --sp-64: 64px;
+  --sp-72: 72px;
+  --sp-80: 80px;
+  --sp-88: 88px;
+  --sp-96: 96px;
+  --sp-128: 128px;
+  --sp-160: 160px;
+  --evs-gnb-height: 74px;
+  --evs-gnb-padding-top: 13px;
+  --evs-gnb-padding-bottom: 20px;
+  --evs-gnb-offset: calc(var(--evs-gnb-height) + env(safe-area-inset-bottom, 0px));
+  --evs-nav-height: 52px;
+  --evs-nav-offset: calc(var(--evs-nav-height) + env(safe-area-inset-top, 0px));
+  --nav-header-title-gutter: 112px;
+  --evs-inbox-tabbar-height: 44px;
+  --evs-inbox-top-offset: calc(var(--evs-nav-offset) + var(--evs-inbox-tabbar-height));
+  --evs-inbox-footer-height: 120px;
+}

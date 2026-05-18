@@ -1,0 +1,18 @@
+<div class="evs-screen evs-root approve-queue-screen">
+  <header class="nav-header">
+    <button type="button" class="nav-back" data-back aria-label="뒤로"><span data-lucide-back></span></button>
+    <div class="nav-title">승인 대기</div>
+    <div class="nav-header__actions"></div>
+  </header>
+  <div class="inbox-tabbar">
+    <div class="evs-tabs inbox-tabs">
+      <button type="button" class="evs-tab active" data-tab="all">전체 <span class="count"></span></button>
+      <button type="button" class="evs-tab" data-tab="urgent">긴급 <span class="count"></span></button>
+      <button type="button" class="evs-tab" data-tab="rejected">반려 <span class="count"></span></button>
+    </div>
+    <button type="button" class="inbox-filter-button"><span data-lucide-filter></span> 필터</button>
+  </div>
+  <div class="evs-content" style="padding:12px 16px;">
+    <div id="approveQueueList"></div>
+  </div>
+</div>

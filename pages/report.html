@@ -1,0 +1,44 @@
+<div class="evs-screen evs-root report-submit-screen">
+  <header class="nav-header">
+    <button type="button" class="nav-back" data-back aria-label="뒤로"><span data-lucide-back></span></button>
+    <div class="nav-title">5월 경비보고서</div>
+    <div class="nav-header__actions"></div>
+  </header>
+  <div class="evs-content report-submit-content">
+    <section class="report-block">
+      <h2 class="report-section-title">경비 목록 <span class="report-section-title__count">(3)</span></h2>
+      <div class="evs-card report-list-card">
+        <div class="report-expense-list" id="reportExpenseList"></div>
+        <div class="report-total-card">
+          <div class="report-total-card__left">
+            <div class="report-total-card__label">목록 합계</div>
+            <div class="report-total-card__count">3건</div>
+          </div>
+          <div class="report-total-card__sum">34,500원</div>
+        </div>
+      </div>
+    </section>
+    <section class="report-block">
+      <h2 class="report-section-title">결재선</h2>
+      <div class="evs-card approval-line" id="reportApprovalLine"></div>
+    </section>
+    <section class="report-block" id="reportAttachSection">
+      <h2 class="report-section-title">첨부 파일</h2>
+      <div class="report-attach-row" id="reportAttachRow">
+        <span class="report-attach-row__icon" id="reportAttachIcon"></span>
+        <span class="report-attach-row__name">출장계획서.pdf</span>
+        <button type="button" class="report-attach-row__close" id="reportAttachClose" aria-label="첨부 삭제"></button>
+      </div>
+    </section>
+    <section class="report-block">
+      <h2 class="report-section-title">메모</h2>
+      <div class="report-memo-wrap">
+        <div id="reportMemoForm"></div>
+      </div>
+    </section>
+    <div class="report-actions">
+      <button type="button" class="report-actions__edit">편집</button>
+      <button type="button" class="report-actions__submit" id="reportSubmit">제출하기</button>
+    </div>
+  </div>
+</div>

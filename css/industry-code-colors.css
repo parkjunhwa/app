@@ -1,0 +1,135 @@
+/**
+ * 업종·경비 코드별 색상 (code001, exp001 …)
+ * 아이콘 형태(shape-*)와 분리 — 형태는 industry-icon-shapes.css
+ *
+ * 가맹점 4자리 업종코드 그룹 색상(mc-*)은 하단 섹션 참조
+ */
+
+/* —— 레거시 사용처 업종 (code001~005) —— */
+.receipt-icon.code001 {
+  background: #ffe9d6;
+  color: #c66200;
+}
+
+.receipt-icon.code002 {
+  background: #fff3c9;
+  color: #9a6500;
+}
+
+.receipt-icon.code003 {
+  background: #e1f4e6;
+  color: #0e8b4d;
+}
+
+.receipt-icon.code004 {
+  background: #e6eeff;
+  color: #0046ff;
+}
+
+.receipt-icon.code005 {
+  background: #ffe2e0;
+  color: #c8261b;
+}
+
+.receipt-icon--neutral {
+  background: rgba(139, 146, 166, 0.08) !important;
+  color: var(--w-ink-3) !important;
+}
+
+/* —— 경비 유형 (exp001~003) —— */
+.expense-icon.exp001 {
+  background: #e8f5ee;
+  color: #0e8b4d;
+}
+
+.expense-icon.exp002 {
+  background: #eef3ff;
+  color: #1e5fcc;
+}
+
+.expense-icon.exp003 {
+  background: #f3ecff;
+  color: #5b4bd6;
+}
+
+.expense-icon--neutral {
+  background: rgba(139, 146, 166, 0.08) !important;
+  color: var(--w-ink-3) !important;
+}
+
+/* ════════════════════════════════════════════════════════════
+   가맹점 4자리 업종코드 그룹 색상 (mc-*)
+   12개 컬러 팔레트 — js/data/industry-codes.js MERCHANT_CODE_GROUPS 참조
+════════════════════════════════════════════════════════════ */
+
+/* mc-lodging: 숙박 — amber */
+.receipt-icon.mc-lodging {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* mc-transport: 교통/여행 — blue */
+.receipt-icon.mc-transport {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* mc-leisure: 스포츠/레저 — emerald */
+.receipt-icon.mc-leisure {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* mc-culture: 문화/취미 — violet */
+.receipt-icon.mc-culture {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+/* mc-home: 홈/가구/가전 — teal */
+.receipt-icon.mc-home {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+/* mc-fuel: 연료/주유 — red */
+.receipt-icon.mc-fuel {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* mc-shopping: 쇼핑/유통/패션 — indigo */
+.receipt-icon.mc-shopping {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* mc-education: 교육/서적/IT — yellow */
+.receipt-icon.mc-education {
+  background: #fef9c3;
+  color: #713f12;
+}
+
+/* mc-auto: 자동차 — orange */
+.receipt-icon.mc-auto {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+/* mc-health: 의료/건강/뷰티 — cyan */
+.receipt-icon.mc-health {
+  background: #cffafe;
+  color: #0e7490;
+}
+
+/* mc-food: 음식/식당 — rose */
+.receipt-icon.mc-food {
+  background: #ffe4e6;
+  color: #be123c;
+}
+
+/* mc-service: 서비스/기타 — slate */
+.receipt-icon.mc-service {
+  background: #f1f5f9;
+  color: #334155;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0D3B82">
+  <title>EVS 모바일 · 로그인</title>
+  <link rel="stylesheet" href="lib/devextreme/css/dx.light.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/dx-overrides.css">
+  <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+  <script src="lib/devextreme/js/dx.all.js"></script>
+  <script src="js/dx-license-hide.js"></script>
+</head>
+<body class="evs-app variant-v1">
+  <div class="login-screen evs-root">
+    <div class="login-hero">
+      <p class="login-hero__kicker">WOONGJIN ERP</p>
+      <h1 class="login-hero__title">EVS<br>모바일</h1>
+      <p class="login-hero__lead">영수증 한 장으로 등록·승인까지</p>
+    </div>
+    <div class="login-hero__art">
+      <img src="assets/images/login_img.svg" alt="" width="280" height="200">
+    </div>
+    <div class="login-panel">
+      <h2 style="font-size:18px;font-weight:700;margin:0 0 16px;">로그인</h2>
+      <label class="evs-label" for="loginUserId">아이디</label>
+      <div id="loginUserId" class="dx-field-host"></div>
+      <label class="evs-label" for="loginPassword" style="margin-top:12px;">비밀번호</label>
+      <div id="loginPassword" class="dx-field-host"></div>
+      <div id="loginRemember" class="login-remember-host"></div>
+      <button type="button" id="loginSubmit" class="evs-btn-primary" style="margin-top:20px;">로그인</button>
+      <div class="login-form-links">
+        <a href="#">아이디 찾기</a>
+        <span class="login-form-links__sep">|</span>
+        <a href="#">비밀번호 찾기</a>
+      </div>
+      <p style="text-align:center;margin-top:16px;font-size:11px;color:var(--w-ink-4);">Version 2.0.0 · © 2026 WOONGJIN CORP.</p>
+    </div>
+  </div>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

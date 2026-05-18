@@ -1,0 +1,112 @@
+<div class="evs-screen evs-root receipt-register-screen">
+  <header class="nav-header">
+    <button type="button" class="nav-back" data-back aria-label="뒤로"><span data-lucide-back></span></button>
+    <div class="nav-title">영수증 등록</div>
+    <div class="nav-header__actions"></div>
+  </header>
+  <div class="evs-content">
+    <div class="receipt-preview" aria-label="영수증 이미지 영역">
+      <span class="receipt-preview__badge">✓ OCR 인식 완료</span>
+    </div>
+    <div class="receipt-body">
+      <div class="evs-card receipt-form-card">
+        <div class="receipt-form-head">
+          <p class="receipt-form-head__title">영수증 정보</p>
+          <span class="receipt-form-head__badge">OCR 자동입력</span>
+        </div>
+        <label class="evs-label">비고 (업체명 등)</label>
+        <div id="dxMemo" class="dx-field-host"></div>
+        <div class="receipt-form-grid">
+          <div>
+            <label class="evs-label">금액</label>
+            <div id="dxAmount" class="dx-field-host"></div>
+          </div>
+          <div>
+            <label class="evs-label">날짜</label>
+            <div id="dxDate" class="dx-field-host"></div>
+          </div>
+        </div>
+        <label class="evs-label">용도 (비용 유형)</label>
+        <div id="dxPurpose" class="dx-field-host"></div>
+        <label class="evs-label">코스트센터</label>
+        <div id="dxCostCenter" class="dx-field-host"></div>
+        <label class="evs-label">예산센터</label>
+        <div id="dxBudgetCenter" class="dx-field-host"></div>
+      </div>
+      <div class="receipt-post-save" id="receiptPostSave">
+        <div class="receipt-attach-section" id="receiptImageSection" hidden>
+          <p class="receipt-attach-section__title">첨부 이미지 (<span id="receiptImageCount">0</span>/8)</p>
+          <div class="receipt-image-carousel">
+            <button type="button" class="receipt-image-carousel__nav" id="receiptImagePrev" aria-label="이전 이미지">
+              <span data-lucide="chevron-left" data-lucide-size="18"></span>
+            </button>
+            <div class="receipt-image-carousel__viewport" id="receiptImageViewport">
+              <div class="receipt-image-carousel__track" id="receiptImageTrack"></div>
+            </div>
+            <button type="button" class="receipt-image-carousel__nav" id="receiptImageNext" aria-label="다음 이미지">
+              <span data-lucide="chevron-right" data-lucide-size="18"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="receipt-attach-section" id="receiptFileSection" hidden>
+          <p class="receipt-attach-section__title">첨부 파일 (<span id="receiptFileCount">0</span>)</p>
+          <div id="receiptFileList"></div>
+        </div>
+
+        <div class="receipt-add-info" id="receiptAddInfo" hidden>
+          <button type="button" class="receipt-add-info__toggle" id="receiptAddInfoToggle">
+            추가정보 입력
+            <span class="receipt-add-info__chevron" data-lucide="chevron-down" data-lucide-size="18"></span>
+          </button>
+          <div class="receipt-add-info__body">
+            <div class="form-section">
+              <p class="form-section__label">[선급금 거래처]</p>
+              <div id="dxVendor" class="dx-field-host"></div>
+            </div>
+            <div class="form-section">
+              <p class="form-section__label">[자산 정보]</p>
+              <div id="dxAsset" class="dx-field-host"></div>
+            </div>
+            <div class="form-section">
+              <p class="form-section__label">[차량 정보]</p>
+              <div id="dxVehicle" class="dx-field-host"></div>
+              <div id="dxVehicleCost" class="dx-field-host"></div>
+              <div class="receipt-form-grid">
+                <div>
+                  <div id="dxDriverId" class="dx-field-host"></div>
+                </div>
+                <div>
+                  <div id="dxDriverName" class="dx-field-host"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <p class="form-section__label">[접대비 정보]</p>
+              <div id="dxEntertainmentPlace" class="dx-field-host"></div>
+              <div class="receipt-form-grid">
+                <div>
+                  <div id="dxEntertainmentAmount" class="dx-field-host"></div>
+                </div>
+                <div>
+                  <div id="dxEntertainmentCurrency" class="dx-field-host"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="receipt-actions" id="receiptAddInfoActions" hidden>
+          <button type="button" class="report-actions__submit" id="receiptSaveAddInfo">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fab-menu" id="fabMenu" aria-hidden="true">
+    <div class="fab-menu__list" role="menu">
+      <button type="button" class="fab-menu__item" id="fabAttachFile" role="menuitem"><span data-lucide="file-text" data-lucide-size="18"></span>파일첨부</button>
+      <button type="button" class="fab-menu__item" id="fabCamera" role="menuitem"><span data-lucide="camera" data-lucide-size="18"></span>촬영</button>
+      <button type="button" class="fab-menu__item" id="fabAddInfo" role="menuitem"><span data-lucide="list" data-lucide-size="18"></span>추가정보입력</button>
+    </div>
+  </div>
+  <button type="button" class="fab-plus" id="fabToggle" aria-label="추가" aria-expanded="false"><span data-lucide-plus></span></button>
+</div>

@@ -1,0 +1,1203 @@
+.page-pad {
+  padding: 0 var(--sp-16);
+}
+
+.page-pad--20 {
+  padding: 0 var(--sp-20);
+}
+
+.hero-greeting {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hero-greeting em {
+  font-style: normal;
+  color: var(--w-blue);
+}
+
+.hero-sub {
+  font-size: 13px;
+  color: var(--w-ink-3);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.summary-card {
+  margin: 0 var(--sp-16) var(--sp-16);
+  padding: var(--sp-20) var(--sp-24);
+}
+
+.home-screen .summary-card {
+  box-shadow:
+    0 1px 1px rgba(13, 38, 76, 0.04),
+    0 4px 7px rgba(13, 38, 76, 0.05);
+}
+
+.summary-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.summary-card__label {
+  font-size: 13px;
+  color: var(--w-ink-3);
+  font-weight: 600;
+}
+
+.summary-card__month {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 99px;
+  background: var(--w-blue-soft);
+  color: var(--w-blue);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.summary-card__amount {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  margin-top: var(--sp-8);
+  font-feature-settings: 'tnum';
+}
+
+.summary-card__unit {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.summary-card__today {
+  margin-top: var(--sp-4);
+  font-size: 13px;
+  color: var(--w-purple);
+  font-weight: 600;
+}
+
+.summary-card__progress {
+  margin-top: var(--sp-16);
+  height: 8px;
+  border-radius: 99px;
+  background: var(--w-line-2);
+  overflow: hidden;
+}
+
+.summary-card__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #5a9dff, #635bff);
+  border-radius: 99px;
+}
+
+.summary-card__budget {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--sp-8);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--w-ink-3);
+}
+
+.summary-card__budget strong {
+  color: var(--w-ink-2);
+  font-weight: 700;
+}
+
+.home-screen .chip[data-home-tab] {
+  cursor: pointer;
+}
+
+.home-recent-empty {
+  margin: 0;
+  padding: var(--sp-24) var(--sp-16);
+  text-align: center;
+  font-size: 14px;
+  color: var(--w-ink-4);
+}
+
+.home-recent {
+  padding-bottom: var(--sp-16);
+}
+
+.home-recent__head {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--sp-8) var(--sp-4) var(--sp-12);
+}
+
+.home-recent__title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.home-recent__link {
+  font-size: 12px;
+  color: var(--w-ink-3);
+  cursor: pointer;
+}
+
+.home-register-banner {
+  margin-top: var(--sp-12);
+  height: 76px;
+  padding: 20px var(--sp-20);
+  padding-right: calc(var(--sp-20) + 52px);
+  border-radius: var(--w-card-radius);
+  background-color: var(--w-blue-soft);
+  background-image: url('../assets/images/main_add_icon.svg');
+  background-repeat: no-repeat;
+  background-position: right var(--sp-16) center;
+  background-size: auto 56px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.home-register-banner__title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--w-ink-1);
+}
+
+.home-register-banner__chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--w-blue);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-register-banner__chevron svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.home-register-banner__sub {
+  margin: var(--sp-4) 0 0;
+  font-size: 12px;
+  color: var(--w-ink-3);
+  font-weight: 500;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--sp-12);
+  padding: 0 var(--sp-16);
+  margin-bottom: var(--sp-12);
+}
+
+.quick-card {
+  padding: var(--sp-16) var(--sp-12);
+  border-radius: var(--w-card-radius);
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-12);
+  cursor: pointer;
+}
+
+.quick-card__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--w-ink-2);
+  flex-shrink: 0;
+}
+
+.quick-card__label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--w-ink-2);
+  line-height: 1.3;
+}
+
+.quick-card--sky {
+  background: var(--w-pastel-sky);
+}
+
+.quick-card--mint {
+  background: var(--w-pastel-mint);
+}
+
+.quick-card--lilac {
+  background: var(--w-pastel-lilac);
+}
+
+/* 홈 퀵카드 전용 아이콘·건수 색 (고정값 — 공통 quick-card 수정과 분리) */
+.home-screen .quick-card--sky .quick-card__icon,
+.home-screen .quick-card--sky .quick-card__count {
+  color: #1e5fcc;
+}
+
+.home-screen .quick-card--mint .quick-card__icon,
+.home-screen .quick-card--mint .quick-card__count {
+  color: #0e8b4d;
+}
+
+.home-screen .quick-card--lilac .quick-card__icon,
+.home-screen .quick-card--lilac .quick-card__count {
+  color: #5b4bd6;
+}
+
+.quick-card__count {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-top: auto;
+}
+
+.receipt-preview {
+  position: relative;
+  background: #000;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+.receipt-preview__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0da654;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.receipt-register-screen:has(> .nav-header) {
+  padding-top: 0;
+}
+
+.receipt-register-screen .receipt-preview {
+  margin-top: var(--evs-nav-offset);
+}
+
+.receipt-register-screen .evs-content {
+  padding-bottom: var(--evs-gnb-offset);
+}
+
+.receipt-body {
+  padding: var(--sp-16);
+}
+
+.receipt-form-card {
+  padding: var(--sp-16);
+}
+
+.receipt-post-save {
+  display: block;
+  margin-top: var(--sp-16);
+}
+
+.fab-plus {
+  position: fixed;
+  right: var(--sp-20);
+  bottom: calc(var(--evs-gnb-offset) + 18px);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--w-blue);
+  color: #fff;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 22px rgba(49, 130, 246, 0.42);
+  cursor: pointer;
+  z-index: 50;
+  transition: transform 0.2s ease;
+}
+
+/* 보고서 제출 — 시안 */
+.report-submit-content {
+  padding-bottom: 0rem;
+}
+
+.report-block {
+  margin-bottom: var(--sp-4);
+}
+
+.report-section-title {
+  margin: 0;
+  padding: var(--sp-16) var(--sp-16) var(--sp-8);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--w-ink-2);
+  letter-spacing: -0.01em;
+}
+
+.report-section-title__count {
+  font-weight: 600;
+  color: var(--w-ink-4);
+}
+
+.report-list-card {
+  margin: 0 var(--sp-16);
+  overflow: hidden;
+}
+
+.report-expense-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-expense-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-12);
+  min-height: 77px;
+  padding: var(--sp-16) var(--sp-20) 17px;
+  border-bottom: 1px solid var(--w-line-2);
+}
+
+.report-expense-row:last-child {
+  min-height: 76px;
+  padding-bottom: var(--sp-16);
+}
+
+.report-submit-screen .report-expense-row .receipt-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.report-submit-screen .report-expense-row .receipt-sub {
+  margin-top: 0;
+  font-size: 12px;
+  color: var(--w-ink-4);
+}
+
+.report-submit-screen .report-expense-row .receipt-amount {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.report-total-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: var(--sp-16) var(--sp-20);
+  border-top: 1px solid var(--w-line-2);
+}
+
+.report-total-card__label {
+  font-size: 12px;
+  color: var(--w-ink-3);
+  font-weight: 600;
+}
+
+.report-total-card__count {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--w-ink-1);
+  margin-top: var(--sp-4);
+  letter-spacing: -0.01em;
+}
+
+.report-total-card__sum {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--w-ink-1);
+  letter-spacing: -0.03em;
+  font-feature-settings: 'tnum';
+}
+
+.report-submit-screen .approval-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--sp-20) var(--sp-16);
+  margin: 0 var(--sp-16);
+}
+
+.approval-line__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-8);
+  flex: 1;
+  min-width: 0;
+}
+
+.approval-line__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.approval-line__sep {
+  color: var(--w-ink-4);
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 14px;
+  flex-shrink: 0;
+}
+
+.approval-line__role {
+  font-size: 11px;
+  color: var(--w-ink-3);
+  font-weight: 600;
+  text-align: center;
+}
+
+.approval-line__name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--w-ink-1);
+  text-align: center;
+}
+
+.report-attach-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-12);
+  margin: 0 var(--sp-16);
+  padding: var(--sp-12) var(--sp-16);
+  border: 1px solid var(--w-line);
+  border-radius: var(--w-card-radius-sm);
+  background: #fff;
+}
+
+.report-attach-row__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.report-attach-row__name {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--w-ink-2);
+}
+
+.report-attach-row__close,
+.receipt-file-row__close {
+  border: 0;
+  background: transparent;
+  padding: var(--sp-4);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* 보고서 메모 dxForm 주변에 붙는 DevExtreme 라이선스 영역 */
+.report-submit-screen .dx-license,
+.report-submit-screen .dx-license-trigger,
+.report-submit-screen [class*='dx-license'],
+.report-memo-wrap .dx-license,
+.report-memo-wrap .dx-license-trigger,
+#reportMemoForm .dx-license {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+.report-memo-wrap {
+  padding: 0 var(--sp-16);
+}
+
+.report-memo-wrap .dx-form {
+  width: 100%;
+}
+
+.report-memo-wrap .dx-field-item {
+  margin: 0;
+  padding: 0;
+}
+
+.report-memo-wrap .dx-field-item-content {
+  width: 100%;
+}
+
+.report-memo-wrap .dx-texteditor {
+  width: 100%;
+  border: 1px solid var(--w-line);
+  border-radius: var(--w-card-radius-sm);
+  background: #fff;
+  font-family: var(--w-font);
+}
+
+.report-memo-wrap .dx-texteditor.dx-state-focused {
+  border-color: var(--w-blue);
+}
+
+.report-memo-wrap .dx-texteditor-input,
+.report-memo-wrap .dx-texteditor .dx-placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  padding:  var(--sp-12);
+  color: var(--w-ink-1);
+}
+
+.report-memo-wrap .dx-texteditor .dx-placeholder {
+  color: var(--w-ink-4);
+  padding:  var(--sp-8);
+}
+
+.report-memo-wrap .dx-texteditor-input {
+  min-height: 88px;
+}
+
+.report-actions {
+  display: flex;
+  gap: var(--sp-8);
+  padding: var(--sp-8) var(--sp-16) var(--sp-16);
+}
+
+.report-actions__edit,
+.report-actions__submit {
+  flex: 1;
+  height: 52px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+
+.report-actions__edit {
+  border: 1px solid var(--w-line);
+  background: #fff;
+  color: var(--w-ink-1);
+}
+
+.report-actions__submit {
+  border: 0;
+  background: var(--w-blue);
+  color: #fff;
+}
+
+.receipt-actions {
+  margin-top: var(--sp-16);
+}
+
+.receipt-actions--compact {
+  margin-top: var(--sp-12);
+}
+
+.receipt-actions .report-actions__submit {
+  width: 100%;
+  display: block;
+  flex: none;
+}
+
+.receipt-form-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-12);
+}
+
+.receipt-form-head__title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.receipt-form-head__badge {
+  font-size: 11px;
+  color: var(--w-blue);
+  background: var(--w-blue-soft);
+  padding: 4px 8px;
+  border-radius: 99px;
+  font-weight: 600;
+}
+
+.receipt-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-12);
+}
+
+.receipt-attach-section {
+  margin-top: var(--sp-20);
+}
+
+/* 영수증 등록: 첨부 0건·추가정보 미입력 시 JS가 hidden을 붙이면 섹션 전체를 감춤 */
+.receipt-attach-section[hidden],
+.receipt-add-info[hidden],
+.receipt-actions[hidden] {
+  display: none !important;
+}
+
+.receipt-image-carousel {
+  display: flex;
+  align-items: stretch;
+  gap: var(--sp-8);
+}
+
+.receipt-image-carousel__nav {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: auto;
+  min-height: 96px;
+  border-radius: var(--w-card-radius-sm);
+  border: 1px solid var(--w-line);
+  background: #fff;
+  color: var(--w-ink-3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.receipt-image-carousel__nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.receipt-image-carousel__viewport {
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.receipt-image-carousel__track {
+  display: flex;
+  gap: var(--sp-8);
+  transition: transform 0.28s ease;
+  will-change: transform;
+}
+
+.receipt-image-carousel__slide {
+  position: relative;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 96px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: var(--w-card-radius-sm);
+  background: #f4f0e6;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.receipt-image-carousel__slide.is-active {
+  border-color: var(--w-blue);
+}
+
+.receipt-image-carousel__close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(14, 21, 37, 0.55);
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receipt-image-carousel__badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--w-blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receipt-image-carousel__thumb--photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.receipt-image-carousel__thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.15), transparent 40%),
+    repeating-linear-gradient(
+      180deg,
+      #fdf6e8 0,
+      #fdf6e8 8px,
+      #f0e6d4 8px,
+      #f0e6d4 9px
+    );
+}
+
+.receipt-image-carousel__add {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 96px;
+  padding: 0;
+  border: 1.5px dashed var(--w-line);
+  border-radius: var(--w-card-radius-sm);
+  background: #fff;
+  color: var(--w-ink-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.receipt-attach-section__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--w-ink-3);
+  margin-bottom: var(--sp-8);
+}
+
+.receipt-file-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-12);
+  padding: var(--sp-12);
+  border: 1px solid var(--w-line);
+  border-radius: var(--w-card-radius-sm);
+  background: #fff;
+  margin-bottom: var(--sp-8);
+}
+
+.receipt-file-row__name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.receipt-add-info {
+  margin-top: var(--sp-16);
+  border: 1px solid var(--w-line);
+  border-radius: var(--w-card-radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.receipt-add-info__toggle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--sp-16);
+  border: 0;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--w-blue);
+}
+
+.receipt-add-info__body {
+  padding: 0 var(--sp-16) var(--sp-16);
+  display: none;
+}
+
+.receipt-add-info.is-open .receipt-add-info__body {
+  display: block;
+}
+
+.receipt-add-info__body > .form-section:first-child {
+  margin-top: 0;
+}
+
+.receipt-add-info.is-open .receipt-add-info__chevron {
+  transform: rotate(180deg);
+}
+
+.receipt-add-info__chevron {
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.fab-menu {
+  position: fixed;
+  right: var(--sp-20);
+  bottom: calc(var(--evs-gnb-offset) + 82px);
+  display: none;
+  z-index: 45;
+}
+
+.fab-menu.is-open {
+  display: block;
+}
+
+.fab-menu__list {
+  display: flex;
+  flex-direction: column;
+  width: 152px;
+  background: #fff;
+  border: 1px solid var(--w-line-2);
+  border-radius: var(--w-card-radius-sm);
+  box-shadow: var(--w-card-shadow);
+  overflow: hidden;
+}
+
+.receipt-register-screen .fab-plus.is-open {
+  transform: rotate(45deg);
+}
+
+/* 홈 — Figma node 5:493 */
+.home-screen .home-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.home-screen .receipt-list.evs-card {
+  overflow: hidden;
+  padding: 1px;
+}
+
+.home-screen .receipt-row {
+  min-height: 77px;
+  padding: var(--sp-16) var(--sp-20) 17px;
+}
+
+.home-screen .receipt-row:last-child {
+  min-height: 76px;
+  padding-bottom: var(--sp-16);
+}
+
+.home-screen .receipt-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.home-screen .receipt-sub {
+  margin-top: 0;
+}
+
+.home-screen .receipt-amount {
+  letter-spacing: -0.02em;
+}
+
+.home-screen .receipt-date {
+  letter-spacing: -0.01em;
+}
+
+.fab-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-8);
+  width: 100%;
+  min-height: 44px;
+  padding: var(--sp-12) var(--sp-16);
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--w-line-2);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--w-ink-2);
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: left;
+}
+
+.fab-menu__item:last-child {
+  border-bottom: 0;
+}
+
+.fab-menu__item svg,
+.fab-menu__item [data-lucide] {
+  color: var(--w-blue);
+  flex-shrink: 0;
+}
+
+/* 카드내역 Inbox */
+.card-inbox-subtext {
+  margin: 0;
+  padding: var(--sp-16) var(--sp-16) var(--sp-4);
+  font-size: 12px;
+  color: var(--w-ink-3);
+  letter-spacing: -0.01em;
+}
+
+.card-inbox-select {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: var(--sp-12);
+  width: 100%;
+  padding: var(--sp-4) var(--sp-16) var(--sp-12);
+  box-sizing: border-box;
+}
+
+.card-inbox-select__main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: var(--sp-8);
+  min-width: 0;
+}
+
+.card-inbox-select__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-8);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card-inbox-select__label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--w-ink-2);
+  letter-spacing: -0.01em;
+}
+
+.card-inbox-select__info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--w-ink-4);
+  flex-shrink: 0;
+}
+
+.card-inbox-toolbar {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-4);
+  justify-self: end;
+  flex-shrink: 0;
+}
+
+.card-inbox-toolbar__btn {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--w-line);
+  border-radius: var(--tw-input-radius);
+  background: var(--w-card);
+  color: var(--w-ink-3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(13, 38, 76, 0.04);
+}
+
+.card-inbox-toolbar__btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+  box-shadow: none;
+}
+
+.card-inbox-toolbar__btn:not(:disabled):hover,
+.card-inbox-toolbar__btn:not(:disabled):focus-visible {
+  border-color: var(--w-blue);
+  color: var(--w-blue);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(49, 130, 246, 0.12);
+}
+
+.card-inbox-toolbar__btn#inboxBtnAdd {
+  background: var(--w-blue);
+  border-color: var(--w-blue);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(49, 130, 246, 0.32);
+}
+
+.card-inbox-toolbar__btn#inboxBtnAdd:hover,
+.card-inbox-toolbar__btn#inboxBtnAdd:focus-visible {
+  background: var(--w-blue-deep);
+  border-color: var(--w-blue-deep);
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(49, 130, 246, 0.22);
+}
+
+.card-inbox-toolbar__btn#inboxBtnDelete:not(:disabled) {
+  color: var(--w-red);
+  border-color: #f5c4c0;
+}
+
+.card-inbox-toolbar__btn#inboxBtnDelete:not(:disabled):hover,
+.card-inbox-toolbar__btn#inboxBtnDelete:not(:disabled):focus-visible {
+  border-color: var(--w-red);
+  color: var(--w-red);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(240, 68, 56, 0.14);
+}
+
+.card-inbox-toolbar__btn [data-lucide],
+.card-inbox-toolbar__btn svg {
+  display: block;
+  flex-shrink: 0;
+  color: currentColor;
+  pointer-events: none;
+}
+
+.card-inbox-toolbar__btn[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--w-ink-1);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 2;
+}
+
+.card-inbox-toolbar__btn[data-tooltip]:not(:disabled):hover::after,
+.card-inbox-toolbar__btn[data-tooltip]:not(:disabled):focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-inbox-list.evs-card {
+  margin: 0 var(--sp-16) var(--sp-16);
+  overflow: hidden;
+}
+
+.card-inbox-screen .receipt-row {
+  width: 100%;
+  min-height: 77px;
+  padding: var(--sp-16) var(--sp-20) 17px;
+  border: 0;
+  border-bottom: 1px solid var(--w-line-2);
+  background: var(--w-card);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.card-inbox-screen .receipt-row:last-child {
+  min-height: 76px;
+  padding-bottom: var(--sp-16);
+  border-bottom: 0;
+}
+
+.card-inbox-screen .receipt-row.selected {
+  background: var(--w-blue-20);
+}
+
+.card-inbox-screen .receipt-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.card-inbox-screen .receipt-sub {
+  margin-top: 0;
+  font-size: 12px;
+  color: var(--w-ink-4);
+}
+
+.card-inbox-screen .receipt-title {
+  font-weight: 600;
+}
+
+.card-inbox-screen .receipt-amount {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.card-inbox-screen .receipt-right {
+  gap: var(--sp-8);
+  flex-shrink: 0;
+}
+
+.card-inbox-screen .badge {
+  border-radius: 99px;
+  height: 22px;
+  padding: 0 var(--sp-8);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.card-inbox-screen .evs-check--round {
+  flex-shrink: 0;
+}
+
+.card-inbox-footer__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--sp-16) var(--sp-16) 0;
+}
+
+.card-inbox-footer__count {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--w-ink-1);
+}
+
+.card-inbox-footer__sum {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-feature-settings: 'tnum';
+  color: var(--w-ink-1);
+}
+
+.card-inbox-footer__action {
+  display: flex;
+  margin: var(--sp-16);
+  width: calc(100% - var(--sp-32));
+  box-sizing: border-box;
+}
+
+.card-inbox-screen .action-bar__text {
+  text-align: center;
+}
