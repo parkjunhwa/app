@@ -1,5 +1,7 @@
-import { receiptIconHtml } from '../receipt-icon.js';
+import { merchantIconHtml } from '../receipt-icon.js';
+import { merchantRowSub, merchantRowTitle } from '../merchant-display.js';
 import { initialSelected, inboxRowsForMode, inboxTabCounts, INBOX_SUB } from '../data/inbox-data.js';
+import { bindInboxFilterBar } from '../inbox-filter-bar.js';
 import { bindLucideIcons } from '../page-utils.js';
 import { createLucideIcon } from '../icons.js';
 
@@ -36,11 +38,11 @@ function rowHtml(r, i, mode, selected) {
     selected[i] +
     '">' +
     checkHtml(selected[i]) +
-    receiptIconHtml(r.industryCode, 'colored') +
+    merchantIconHtml(r.merchantCode, 'colored') +
     '<div class="receipt-main"><div class="receipt-title">' +
-    r.title +
+    merchantRowTitle(r) +
     '</div><div class="receipt-sub">' +
-    r.sub +
+    merchantRowSub(r) +
     '</div></div>' +
     '<div class="receipt-right"><div class="receipt-amount">' +
     fmt(r.amount) +
@@ -52,6 +54,7 @@ function rowHtml(r, i, mode, selected) {
 
 export function initPage(root, params) {
   bindLucideIcons(root);
+  bindInboxFilterBar(root);
 
   let mode = params.get('mode') || 'need';
   let rows = inboxRowsForMode(mode);

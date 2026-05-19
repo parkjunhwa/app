@@ -1,58 +1,9 @@
 /**
- * 업종·경비 코드별 색상 (code001, exp001 …)
- * 아이콘 형태(shape-*)와 분리 — 형태는 industry-icon-shapes.css
- *
- * 가맹점 4자리 업종코드 그룹 색상(mc-*)은 하단 섹션 참조
+ * 가맹점 4자리 업종코드 그룹 색상 (mc-*)
+ * 아이콘 형태(shape-*)는 industry-icon-shapes.css
  */
 
-/* —— 레거시 사용처 업종 (code001~005) —— */
-.receipt-icon.code001 {
-  background: #ffe9d6;
-  color: #c66200;
-}
-
-.receipt-icon.code002 {
-  background: #fff3c9;
-  color: #9a6500;
-}
-
-.receipt-icon.code003 {
-  background: #e1f4e6;
-  color: #0e8b4d;
-}
-
-.receipt-icon.code004 {
-  background: #e6eeff;
-  color: #0046ff;
-}
-
-.receipt-icon.code005 {
-  background: #ffe2e0;
-  color: #c8261b;
-}
-
 .receipt-icon--neutral {
-  background: rgba(139, 146, 166, 0.08) !important;
-  color: var(--w-ink-3) !important;
-}
-
-/* —— 경비 유형 (exp001~003) —— */
-.expense-icon.exp001 {
-  background: #e8f5ee;
-  color: #0e8b4d;
-}
-
-.expense-icon.exp002 {
-  background: #eef3ff;
-  color: #1e5fcc;
-}
-
-.expense-icon.exp003 {
-  background: #f3ecff;
-  color: #5b4bd6;
-}
-
-.expense-icon--neutral {
   background: rgba(139, 146, 166, 0.08) !important;
   color: var(--w-ink-3) !important;
 }
@@ -92,10 +43,10 @@
   color: #0f766e;
 }
 
-/* mc-fuel: 연료/주유 — red */
+/* mc-fuel: 연료/주유 — crimson (주유소) */
 .receipt-icon.mc-fuel {
-  background: #fee2e2;
-  color: #b91c1c;
+  background: #ffe4e6;
+  color: #9f1239;
 }
 
 /* mc-shopping: 쇼핑/유통/패션 — indigo */
@@ -122,10 +73,10 @@
   color: #0e7490;
 }
 
-/* mc-food: 음식/식당 — rose */
+/* mc-food: 음식/식당·한식 — green (mc-fuel 레드와 구분) */
 .receipt-icon.mc-food {
-  background: #ffe4e6;
-  color: #be123c;
+  background: #dcfce7;
+  color: #15803d;
 }
 
 /* mc-service: 서비스/기타 — slate */

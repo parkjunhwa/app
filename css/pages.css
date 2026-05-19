@@ -643,9 +643,8 @@
   margin-top: var(--sp-20);
 }
 
-/* 영수증 등록: 첨부 0건·추가정보 미입력 시 JS가 hidden을 붙이면 섹션 전체를 감춤 */
+/* 영수증 등록: 첨부 0건 시 JS가 hidden을 붙이면 섹션 감춤. 추가정보는 접힘/펼침만 사용 */
 .receipt-attach-section[hidden],
-.receipt-add-info[hidden],
 .receipt-actions[hidden] {
   display: none !important;
 }

@@ -9,6 +9,11 @@ export const APPROVE_QUEUE = [
     urgent: true,
     rejected: false,
     avatar: 3,
+    expenses: [
+      { merchantCode: '8301', storeName: '스타벅스 강남점', amount: '4,500' },
+      { merchantCode: '1123', amount: '18,000' },
+      { merchantCode: '8001', amount: '12,000' },
+    ],
   },
   {
     name: '김철수',
@@ -20,6 +25,10 @@ export const APPROVE_QUEUE = [
     urgent: false,
     rejected: false,
     avatar: 4,
+    expenses: [
+      { merchantCode: '4010', storeName: 'CU 역삼점', amount: '3,200' },
+      { merchantCode: '3305', storeName: 'SK주유소', amount: '24,800' },
+    ],
   },
   {
     name: '이영희',
@@ -31,6 +40,10 @@ export const APPROVE_QUEUE = [
     urgent: false,
     rejected: true,
     avatar: 5,
+    expenses: [
+      { merchantCode: '1001', storeName: 'MD호텔', amount: '85,000' },
+      { merchantCode: '1101', storeName: '대한항공', amount: '25,000' },
+    ],
   },
 ];
 

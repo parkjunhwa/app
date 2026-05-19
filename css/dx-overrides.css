@@ -108,6 +108,122 @@ body.evs-app .dx-placeholder {
   font-family: var(--w-font);
 }
 
+/* ════════════════════════════════════════════════════════════
+   GNB — dxMenu 오버라이드
+   #app-gnb.evs-gnb 안의 dxMenu 기본 스타일을 완전히 리셋하고
+   기존 evs-gnb-item 레이아웃을 그대로 복원합니다.
+════════════════════════════════════════════════════════════ */
+
+/* dxMenu 루트: GNB 전체 너비 (inline-block 기본값 무력화) */
+#app-gnb.evs-gnb .dx-menu.dx-widget {
+  flex: 1 1 100%;
+  width: 100% !important;
+  max-width: 100%;
+  align-self: stretch;
+  min-width: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+/* 메뉴 기본 컨테이너 */
+#app-gnb.evs-gnb .dx-menu-base {
+  width: 100% !important;
+  height: 100%;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  overflow: visible;
+}
+
+#app-gnb.evs-gnb .dx-menu-horizontal {
+  width: 100%;
+}
+
+/* 아이템 목록: 가로 flex, 4등분 */
+#app-gnb.evs-gnb .dx-menu-items-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch;
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+/* 아이템 래퍼: 4등분 (horizontal dxMenu) */
+#app-gnb.evs-gnb .dx-menu-horizontal .dx-menu-items-container > .dx-menu-item-wrapper,
+#app-gnb.evs-gnb .dx-menu-item-wrapper {
+  flex: 1 1 25% !important;
+  min-width: 0;
+  width: 25% !important;
+  max-width: 25%;
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible;
+  float: none !important;
+}
+
+/* 아이템 본체: 기본 스타일 전부 제거 */
+#app-gnb.evs-gnb .dx-menu-item,
+#app-gnb.evs-gnb .dx-item.dx-menu-item {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible;
+  cursor: pointer;
+}
+
+/* 모든 인터랙션 상태에서 배경·그림자 제거 */
+#app-gnb.evs-gnb .dx-menu-item.dx-state-hover,
+#app-gnb.evs-gnb .dx-menu-item.dx-state-active,
+#app-gnb.evs-gnb .dx-menu-item.dx-state-focused,
+#app-gnb.evs-gnb .dx-menu-item.dx-state-selected {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* 아이템 콘텐츠 래퍼: 패딩 제거, itemTemplate(evs-gnb-item)이 full-width 차지 */
+#app-gnb.evs-gnb .dx-item-content.dx-menu-item-content {
+  padding: 0 !important;
+  display: flex !important;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* itemTemplate 루트: 셀 전체 너비·중앙 정렬 */
+#app-gnb.evs-gnb .evs-gnb-item {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 서브메뉴 팝아웃 화살표 숨김 (GNB에는 서브메뉴 없음) */
+#app-gnb.evs-gnb .dx-menu-item-popout {
+  display: none !important;
+}
+
+/* 혹시 생성될 서브메뉴 오버레이 숨김 */
+#app-gnb.evs-gnb .dx-overlay-wrapper.dx-submenu {
+  display: none !important;
+  pointer-events: none !important;
+}
+
 /* 로그인 — 아이디 저장 체크박스 (DevExtreme check 아이콘) */
 body.evs-app .login-remember-host {
   margin-top: var(--sp-12);

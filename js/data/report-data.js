@@ -1,24 +1,19 @@
 export const REPORT_EXPENSES = [
   {
-    title: '스타벅스 강남점',
-    sub: '05.11(토) · 식대',
+    merchantCode: '8301',
+    storeName: '스타벅스 강남점',
+    date: '05.11(토)',
     amount: '4,500',
-    industryCode: 'code001',
-    expenseCode: 'exp001',
   },
   {
-    title: '택시',
-    sub: '05.11(토) · 교통비',
+    merchantCode: '1123',
+    date: '05.11(토)',
     amount: '18,000',
-    industryCode: 'code002',
-    expenseCode: 'exp002',
   },
   {
-    title: '점심',
-    sub: '05.10(금) · 식대',
+    merchantCode: '8001',
+    date: '05.10(금)',
     amount: '12,000',
-    industryCode: 'code003',
-    expenseCode: 'exp001',
   },
 ];
 

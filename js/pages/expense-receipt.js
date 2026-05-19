@@ -232,20 +232,21 @@ export function initPage(root) {
   /** 추가정보: 하나라도 값이 있으면 true */
   const hasAddInfoValues = () => addInfoWidgets.some((w) => !isEmptyValue(w.option('value')));
 
-  /**
-   * 추가정보(#receiptAddInfo): 모든 필드가 null/비어 있으면 감춤(hidden).
-   * 값이 하나라도 있으면 표시하고, 기본은 펼침(is-open). 토글로 접기 가능.
-   */
+  /** 추가정보(#receiptAddInfo): 값 없음 → 접힘, 값 있음 → 펼침. 블록은 항상 표시 */
+  const syncAddInfoActions = () => {
+    if (!addInfoActions || !addInfo) return;
+    addInfoActions.hidden = !addInfo.classList.contains('is-open');
+  };
+
   const updateAddInfoVisibility = () => {
-    if (!addInfo || !addInfoActions) return;
+    if (!addInfo) return;
     const hasValues = hasAddInfoValues();
-    addInfo.hidden = !hasValues;
-    addInfoActions.hidden = !hasValues;
     if (hasValues) {
       addInfo.classList.add('is-open');
     } else {
       addInfo.classList.remove('is-open');
     }
+    syncAddInfoActions();
     bindLucideIcons(addInfo);
   };
 
@@ -442,8 +443,15 @@ export function initPage(root) {
     updateAddInfoVisibility();
   };
 
+  const openAddInfo = () => {
+    addInfo?.classList.add('is-open');
+    syncAddInfoActions();
+    bindLucideIcons(addInfo);
+  };
+
   const scrollToAddInfo = () => {
     const focusFirst = () => {
+      openAddInfo();
       addInfoWidgets[0]?.focus();
       addInfo?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     };
@@ -463,8 +471,8 @@ export function initPage(root) {
   });
 
   addInfoToggle?.addEventListener('click', () => {
-    if (addInfo?.hidden) return;
-    addInfo.classList.toggle('is-open');
+    addInfo?.classList.toggle('is-open');
+    syncAddInfoActions();
     bindLucideIcons(addInfo);
   });
 

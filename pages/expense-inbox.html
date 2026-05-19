@@ -5,12 +5,35 @@
     <div class="nav-header__actions"></div>
   </header>
   <div class="inbox-tabbar" id="inboxTabs">
-    <div class="evs-tabs inbox-tabs">
-      <button type="button" class="evs-tab" data-mode="need">미처리 <span class="count"></span></button>
-      <button type="button" class="evs-tab" data-mode="done">처리완료 <span class="count"></span></button>
-      <button type="button" class="evs-tab" data-mode="all">전체 <span class="count"></span></button>
+    <div class="inbox-tabbar__main">
+      <div class="evs-tabs inbox-tabs">
+        <button type="button" class="evs-tab" data-mode="need">미처리 <span class="count"></span></button>
+        <button type="button" class="evs-tab" data-mode="done">처리완료 <span class="count"></span></button>
+        <button type="button" class="evs-tab" data-mode="all">전체 <span class="count"></span></button>
+      </div>
+      <button type="button" class="inbox-filter-button" aria-expanded="false" aria-label="필터"><span data-lucide-filter></span> 필터</button>
     </div>
-    <button type="button" class="inbox-filter-button"><span data-lucide-filter></span> 필터</button>
+    <div class="inbox-filter-bar" id="inboxFilterPanel" hidden aria-label="목록 필터">
+      <div class="inbox-filter-bar__fields">
+        <label class="inbox-filter-field">
+          <span class="inbox-filter-field__label">기간</span>
+          <select class="inbox-filter-select" data-filter="period" aria-label="기간"></select>
+        </label>
+        <label class="inbox-filter-field">
+          <span class="inbox-filter-field__label">카드</span>
+          <select class="inbox-filter-select" data-filter="card" aria-label="카드">
+            <option value="all">전체</option>
+            <option value="corp">법인</option>
+            <option value="personal">개인</option>
+          </select>
+        </label>
+        <label class="inbox-filter-field">
+          <span class="inbox-filter-field__label">업종</span>
+          <select class="inbox-filter-select" data-filter="industry" aria-label="업종"></select>
+        </label>
+      </div>
+      <button type="button" class="inbox-filter-bar__reset" disabled>초기화</button>
+    </div>
   </div>
   <div class="evs-content card-inbox-content">
     <div class="card-inbox-content__head">

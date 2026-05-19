@@ -1,16 +1,8 @@
 /**
- * 아이콘 형태(shape-*) — 색상은 industry-code-colors.css
- * 동일 shape는 업종·경비에서 재사용 가능
+ * 가맹점 아이콘 shape-* — 색상은 industry-code-colors.css
  */
 
-.receipt-icon svg,
-.expense-icon svg {
+.receipt-icon svg {
   display: block;
   flex-shrink: 0;
-}
-
-/* shape 클래스는 JS에서 부여 — 형태별 크기·정렬만 공통 관리 */
-.receipt-icon[class*='shape-'],
-.expense-icon[class*='shape-'] {
-  /* 형태별 오버라이드가 필요할 때 여기에 추가 */
 }

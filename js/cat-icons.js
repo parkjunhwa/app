@@ -1,3 +1,3 @@
-/** @deprecated receipt-icon.js 사용 */
-export { expenseIconHtml, merchantIconHtml, merchantIconMeta, receiptIconHtml } from './receipt-icon.js';
-export { receiptIconHtml as catIconHtml } from './receipt-icon.js';
+/** @deprecated receipt-icon.js — merchantIconHtml 사용 */
+export { merchantIconHtml, merchantIconMeta } from './receipt-icon.js';
+export { merchantIconHtml as catIconHtml } from './receipt-icon.js';

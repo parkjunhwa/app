@@ -44,11 +44,14 @@ export const HOME_SUMMARY_BY_TAB = {
 
 export const HOME_TAB_KEYS = ['all', 'need', 'unsubmitted', 'approve', 'month'];
 
-/** 퀵카드·최근 내역 — 탭과 무관하게 고정 */
 export const HOME_QUICK = { need: 3, unsubmitted: 2, approve: 1 };
 
+/**
+ * 최근 내역 — merchantCode만 필수 (표시문구는 merchant-display.js)
+ * storeName: 카드 승인 가맹점명(선택)
+ */
 export const HOME_RECENT = [
-  { title: '스타벅스 강남점', sub: '식대', amount: '4,500', date: '05.11', industryCode: 'code001', expenseCode: 'exp001' },
-  { title: '택시', sub: '교통비', amount: '18,000', date: '05.11', industryCode: 'code002', expenseCode: 'exp002' },
-  { title: '점심 식사', sub: '식대', amount: '12,000', date: '05.10', industryCode: 'code003', expenseCode: 'exp001' },
+  { merchantCode: '8301', storeName: '스타벅스 강남점', amount: '4,500', date: '05.11' },
+  { merchantCode: '1123', amount: '18,000', date: '05.11' },
+  { merchantCode: '8001', storeName: '춘천한식', amount: '12,000', date: '05.10' },
 ];

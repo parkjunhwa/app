@@ -13,7 +13,7 @@ export const MERCHANT_CODES = [
   { code: '1120', label: "고속 버스" },
   { code: '1121', label: "철 도" },
   { code: '1122', label: "여 객 선" },
-  { code: '1123', label: "택 시" },
+  { code: '1123', label: "택시" },
   { code: '1124', label: "택시회사" },
   { code: '1130', label: "렌 트 카" },
   { code: '1199', label: "기타교통수단" },

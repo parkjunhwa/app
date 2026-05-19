@@ -1,15 +1,16 @@
-import { receiptIconHtml } from '../receipt-icon.js';
+import { merchantIconHtml } from '../receipt-icon.js';
+import { merchantRowSub, merchantRowTitle } from '../merchant-display.js';
 import { bindLucideIcons } from '../page-utils.js';
 import { HOME_QUICK, HOME_RECENT, HOME_SUMMARY_BY_TAB, HOME_TAB_KEYS } from '../data/home-data.js';
 
 function recentRowHtml(row) {
   return (
     '<div class="receipt-row">' +
-    receiptIconHtml(row.industryCode, 'colored') +
+    merchantIconHtml(row.merchantCode, 'colored') +
     '<div class="receipt-main"><div class="receipt-title">' +
-    row.title +
+    merchantRowTitle(row) +
     '</div><div class="receipt-sub">' +
-    row.sub +
+    merchantRowSub(row) +
     '</div></div>' +
     '<div class="receipt-right"><div class="receipt-amount">' +
     row.amount +

@@ -1,4 +1,5 @@
-import { expenseIconHtml } from '../receipt-icon.js';
+import { merchantIconHtml } from '../receipt-icon.js';
+import { merchantRowSub, merchantRowTitle } from '../merchant-display.js';
 import { personAvatarHtml } from '../avatar.js';
 import { REPORT_APPROVAL_LINE, REPORT_EXPENSES } from '../data/report-data.js';
 import { bindLucideIcons } from '../page-utils.js';
@@ -8,11 +9,11 @@ import { hideDxLicenseBanner, waitForDevExtreme } from '../devextreme-init.js';
 function expenseRowHtml(row) {
   return (
     '<div class="report-expense-row">' +
-    expenseIconHtml(row.expenseCode, 'colored') +
+    merchantIconHtml(row.merchantCode, 'colored') +
     '<div class="receipt-main"><div class="receipt-title">' +
-    row.title +
+    merchantRowTitle(row) +
     '</div><div class="receipt-sub">' +
-    row.sub +
+    merchantRowSub(row) +
     '</div></div>' +
     '<div class="receipt-right"><div class="receipt-amount">' +
     row.amount +

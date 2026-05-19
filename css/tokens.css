@@ -97,6 +97,7 @@
   --w-line-2: #EEF1F6;
   --w-hero-grad: linear-gradient(160deg, #3182F6 0%, #1E5FCC 60%, #0D3B82 100%);
   --w-login-grad: linear-gradient(180deg, #0D3B82 0%, #1E5FCC 50%, #3182F6 100%);
+  --login-panel-min-height: 360px;
   --w-cta-grad: linear-gradient(95deg, #3182F6 0%, #1E5FCC 100%);
   --w-card-radius: 16px;
   --w-card-radius-sm: 10px;
@@ -135,7 +136,9 @@
   --evs-nav-height: 52px;
   --evs-nav-offset: calc(var(--evs-nav-height) + env(safe-area-inset-top, 0px));
   --nav-header-title-gutter: 112px;
-  --evs-inbox-tabbar-height: 44px;
+  --evs-inbox-tabbar-tabs-height: 44px;
+  --evs-inbox-filter-bar-height: 40px;
+  --evs-inbox-tabbar-height: calc(var(--evs-inbox-tabbar-tabs-height) + var(--evs-inbox-filter-bar-height));
   --evs-inbox-top-offset: calc(var(--evs-nav-offset) + var(--evs-inbox-tabbar-height));
   --evs-inbox-footer-height: 120px;
 }
