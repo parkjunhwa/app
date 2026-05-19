@@ -964,13 +964,27 @@ textarea {
 }
 
 .login-remember {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--sp-8);
-  margin-top: var(--sp-12);
+  min-height: 44px;
+  padding: var(--sp-4) 0;
   font-size: 13px;
+  font-weight: 500;
   color: var(--w-ink-3);
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.login-remember__input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--w-blue);
+  cursor: pointer;
+  border-radius: .25rem;
 }
 
 .login-hero__kicker {

@@ -223,39 +223,3 @@ body.evs-app .dx-placeholder {
   display: none !important;
   pointer-events: none !important;
 }
-
-/* 로그인 — 아이디 저장 체크박스 (DevExtreme check 아이콘) */
-body.evs-app .login-remember-host {
-  margin-top: var(--sp-12);
-}
-
-body.evs-app .login-remember-host .dx-checkbox {
-  display: inline-flex;
-  align-items: center;
-}
-
-body.evs-app .login-remember-host .dx-checkbox-icon {
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  border-radius: 4px;
-  border: 1.5px solid var(--w-line);
-  background: #fff;
-}
-
-body.evs-app .login-remember-host .dx-checkbox-checked .dx-checkbox-icon {
-  background: var(--w-blue);
-  border-color: var(--w-blue);
-}
-
-body.evs-app .login-remember-host .dx-checkbox-icon::before {
-  color: #fff;
-}
-
-body.evs-app .login-remember-host .dx-checkbox-text {
-  font-size: 13px;
-  color: var(--w-ink-3);
-  font-family: var(--w-font);
-  padding-inline-start: var(--sp-8);
-  line-height: 1.4;
-}
